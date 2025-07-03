@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>PrepBooster</title>
+  </head>
+  <body>
+    <main>
+      <h1><span>Prep</span><span>Boosters</span></h1>
+      <p id="slogan">No more gambling over material and virus</p>
+      <div id="search">
+        <input type="text" placeholder="" id="search-input" autocomplete="off"/>
+        <button>Search</button>
+        <div id="suggestions" class="suggestion-box"></div>
+
+      </div>
+      <div id="body-mid">
+          <a href="books.html" class="cards">📚 Books</a>
+          <a href="question-bank.html" class="cards">❓ PYQs & Quesion papers</a>
+          <a href="ncert.html" class="cards">🧬 NCERT</a>
+          <a href="notes.html" class="cards">📝Notes</a>
+      </div>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="databank/t.js"></script>
+    <script>
+        var typed4 = new Typed('#search-input', {
+    strings: ['Search whatever you need', 'Either it is a book', 'Or a lecture', 'Or just some free notes', 'We have it all organised!'],
+    typeSpeed: 50,
+    backSpeed: 10,
+    attr: 'placeholder',
+    bindInputFocusEvents: true,
+    loop: false,
+  });
+    </script>
+  </body>
+</html>
