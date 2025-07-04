@@ -33,7 +33,7 @@ const objs = [
   },
   {
     "class": "NCERT Class 11",
-    "description": "NCERT_CLASS_11_BIOLOGY.pdf",
+    "description": "NCERT CLASS 11 BIOLOGY.pdf",
     "source": "Google Drive",
     "price": "Free \ud83d\udd25",
     "size": "44.2 MB",
@@ -41,7 +41,7 @@ const objs = [
   },
   {
     "class": "NCERT Class 11",
-    "description": "NCERT_CLASS_11_MATHEMATICS_ENGLISH.pdf",
+    "description": "NCERT CLASS 11 MATHEMATICS ENGLISH.pdf",
     "source": "Google Drive",
     "price": "Free \ud83d\udd25",
     "size": "34.2 MB",
