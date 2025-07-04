@@ -58,7 +58,7 @@ main > div#search {
   margin-bottom: 100px;
   overflow: hidden;
   /* box-shadow:  5px 5px 10px #cecece90,
-                -5px -5px 10px #ffffff90; */
+  -5px -5px 10px #ffffff90; */
 }
 main > div#search > input {
   width: calc(100% - 200px);
@@ -113,18 +113,18 @@ main > div#body-mid > a.cards {
   transition: all 0.2s ease-in-out;
 }
 .suggestion-box {
-      background: #f5f5f5;
-    /* border: 1px solid #ccc; */
-    border-top: none;
-    overflow-y: auto;
-    position: absolute;
-    z-index: 10;
-    transition: all 0.2s ease-in-out;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 0 0 50px 50px;
-    display: none;
-    max-height: 500px;
+  background: #f5f5f5;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 0 0 50px 50px;
+  display: none;
+  max-height: 500px;
 }
 .suggestion {
   padding: 10px 20px;
@@ -135,7 +135,8 @@ main > div#body-mid > a.cards {
   background: #eee;
 }
 
-.cards:hover,.card-2:hover {
+.cards:hover,
+.card-2:hover {
   transform: translateY(-5px) scale(1.02);
 }
 .cards:nth-child(1) {
@@ -157,73 +158,79 @@ main > div#body-mid-2 {
   padding-bottom: 200px;
 }
 .card-2 {
-      display: flex
-;
-    align-items: flex-start;
-    border-radius: 50px;
-    background: #ffffff;
-    box-shadow: 5px 5px 10px #d6d6d6, -5px -5px 10px #ffffff;
-    text-decoration: none;
-    color: #111111;
-    min-height: 300px;
-    width: 48%;
-    transition: all 0.2s ease-in-out;
-    margin: 1%;
-    padding: 40px 40px 19px 20px;
-    flex-direction: column;
-    justify-content: flex-start;
-    box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #d6d6d6, -5px -5px 10px #ffffff;
+  text-decoration: none;
+  color: #111111;
+  min-height: 300px;
+  width: 48%;
+  transition: all 0.2s ease-in-out;
+  margin: 1%;
+  padding: 40px 40px 19px 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .card-2 > .card-d {
   font-size: 1.1rem;
   margin: 0 0 20px 20px;
 }
-.card-2 > .card-d:nth-child(2){
+.card-2 > .card-d:nth-child(2) {
   margin-block: 20px;
   line-height: 2;
   border-block: 1px solid #e2e2e2;
   /* background-color:  #fafafa; */
   padding-inline: 5px;
-  user-select:text;
-
+  user-select: text;
 }
 .card-2 > .card-d > a {
-    text-decoration: none;
-    color: #111111;
-    font-weight: 500;
-    border-bottom: 0.5px solid #111111;
-    margin: 0 5px;
-    padding: 5px;
-    transition: 0.1s ease-in-out;
-    border-radius: 5px 5px 0 0;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 500;
+  border-bottom: 0.5px solid #111111;
+  margin: 0 5px;
+  padding: 5px;
+  transition: 0.1s ease-in-out;
+  border-radius: 5px 5px 0 0;
 }
 .card-2 > .card-d > a:hover {
-    background: #e7e7e7;
+  background: #e7e7e7;
 }
-#home-btn{
-      width: 30px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: #eaeaea;
-    padding: 10px;
-    border-radius: 50px;
+#home-btn {
+  width: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #eaeaea;
+  padding: 10px;
+  border-radius: 50px;
 }
 
 @media (max-width: 600px) {
   main > div#body-mid {
     grid-template-columns: 1fr;
-grid-template-rows: repeat(4, 1fr);
-margin-bottom: 50px;
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 50px;
   }
   main > div#body-mid-2 {
     flex-direction: column;
   }
-  .card-2{
+  .card-2 {
     width: 100%;
     margin: 0 0 20px 0;
     padding: 20px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    height: 70px;
+  }
+  p#slogan {
+    font-size: 1rem;
+    margin: 0 0 50px 0;
   }
   main > div#body-mid > a.cards {
     width: 100%;
@@ -231,22 +238,32 @@ margin-bottom: 50px;
     font-size: 1.2rem;
   }
   .cards:nth-child(1) {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.cards:nth-child(2) {
-   grid-area: 2 / 1 / 3 / 2; 
-}
-.cards:nth-child(3) {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.cards:nth-child(4) {
-  grid-area: 4 / 1 / 5 / 2;
-}
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .cards:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .cards:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .cards:nth-child(4) {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  main > div#search{
+    width: 95%;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    padding-right: 10px;
+  }
   main > div#search > input {
-    width: calc(100% - 100px);
+    width: calc(100% - 75px);
+    padding-right: 20px;
   }
   main > div#search > button {
-    width: 100px;
+    
+    font-size: 0.9rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
   }
-  
 }
